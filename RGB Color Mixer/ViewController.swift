@@ -9,9 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var colorPalette: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        colorPalette.layer.cornerRadius = 10
+        colorPalette.backgroundColor = .red
     }
 
 
