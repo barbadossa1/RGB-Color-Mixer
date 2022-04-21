@@ -15,8 +15,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        colorPalette.layer.cornerRadius = 10
-        colorPalette.backgroundColor = .red
     }
 
 
