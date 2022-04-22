@@ -28,20 +28,12 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func setIndicators(for indicators: UILabel ) {
-        indicators.forEach{
-        switch indicators() {
-        case redValue:
-            redValue.text = String(redSlider.value)
-        case greenValue:
-            greenValue.text = String(greenSlider.value)
-        case blueValue:
-            blueValue.text = String(blueSlider.value)
-        }
-        }
+    @IBAction func setIndicators {
         
     }
-
-
+        
 }
+
+
+
 
