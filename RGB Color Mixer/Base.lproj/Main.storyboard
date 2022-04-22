@@ -85,12 +85,18 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aOj-wA-CfT">
                                                 <rect key="frame" x="-2" y="0.0" width="270" height="31"/>
+                                                <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                                <color key="maximumTrackTintColor" systemColor="systemRedColor"/>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="T7s-Yd-Tdg">
                                                 <rect key="frame" x="-2" y="67" width="270" height="31"/>
+                                                <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                                <color key="maximumTrackTintColor" systemColor="systemGreenColor"/>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kMF-dm-XU0">
                                                 <rect key="frame" x="-2" y="134" width="270" height="31"/>
+                                                <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
+                                                <color key="maximumTrackTintColor" systemColor="systemBlueColor"/>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -111,7 +117,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bkueValue" destination="U2C-8m-L7q" id="QpK-8t-6U0"/>
+                        <outlet property="blueSlider" destination="kMF-dm-XU0" id="iWN-Te-nsk"/>
+                        <outlet property="blueValue" destination="U2C-8m-L7q" id="4qt-ip-sOR"/>
                         <outlet property="colorPalette" destination="a2t-oD-cf8" id="TTc-ss-CPz"/>
+                        <outlet property="greenSlider" destination="T7s-Yd-Tdg" id="D2Z-A2-g3v"/>
+                        <outlet property="greenValue" destination="M20-kx-DRw" id="rWQ-rc-eE1"/>
+                        <outlet property="redSlider" destination="aOj-wA-CfT" id="Gqs-dH-WGi"/>
+                        <outlet property="redValue" destination="Z7A-hT-n3A" id="2W9-a1-fSZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -122,6 +135,15 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
