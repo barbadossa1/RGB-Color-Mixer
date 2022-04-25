@@ -24,14 +24,36 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         colorPalette.layer.cornerRadius = 10
-    
+        
+        setColorPalette() // вызываем функцию передачи значения цветов из слайдеров
         
     }
     
-    @IBAction func setIndicators {
-        
+    // 1. передаем значения слайдеров в цветовую политру Color Palette
+    
+    private func setColorPalette() {
+        colorPalette.backgroundColor = UIColor(
+            redSlider: CGFloat(redSlider.value),
+            greenSlider: CGFloat(greenSlider.value),
+            blueSlider: CGFloat(blueSlider.value),
+            alpha: 1
+        )
     }
-        
+    
+    //2. передаем значение ползунка слайдера в лейблы
+    
+    private func setLabelColorValue(sender: UISlider){
+        var currentValue = Float(sender.value){
+            switch currentValue {
+            case redValue:
+                redValue = String(redSlider.value)
+            case greenValue:
+                greenValue = String(greenSlider.value)
+            default:
+                blueValue = String(blueSlider.value)
+            }
+        }
+    }
 }
 
 
