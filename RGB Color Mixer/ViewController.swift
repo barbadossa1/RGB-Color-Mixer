@@ -7,53 +7,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
-    @IBOutlet weak var colorPalette: UIView!
+class ViewController: UIViewController {
     
-    @IBOutlet weak var redValue: UILabel!
-    @IBOutlet weak var greenValue: UILabel!
-    @IBOutlet weak var blueValue: UILabel!
+    @IBOutlet var redSlider: UISlider!
+    @IBOutlet var greenSlider: UISlider!
+    @IBOutlet var blueSlider: UISlider!
     
-    @IBOutlet weak var redSlider: UISlider!
-    @IBOutlet weak var greenSlider: UISlider!
-    @IBOutlet weak var blueSlider: UISlider!
+    @IBOutlet var redSliderValue: UILabel!
+    @IBOutlet var greenSliderValue: UILabel!
+    @IBOutlet var blueSliderValue: UILabel!
     
-    
+    @IBOutlet var colorPalette: UIView!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         colorPalette.layer.cornerRadius = 10
         
-        setColorPalette() // вызываем функцию передачи значения цветов из слайдеров
         
     }
     
-    // 1. передаем значения слайдеров в цветовую политру Color Palette
-    
-    private func setColorPalette() {
-        colorPalette.backgroundColor = UIColor(
-            redSlider: CGFloat(redSlider.value),
-            greenSlider: CGFloat(greenSlider.value),
-            blueSlider: CGFloat(blueSlider.value),
-            alpha: 1
-        )
+    @IBAction func setLabelValues() {
+        redSliderValue.text = String(redSlider.value)
+        greenSliderValue.text = String(greenSlider.value)
+        blueSliderValue.text = String(blueSlider.value)
     }
     
-    //2. передаем значение ползунка слайдера в лейблы
-    
-    private func setLabelColorValue(sender: UISlider){
-        var currentValue = Float(sender.value){
-            switch currentValue {
-            case redValue:
-                redValue = String(redSlider.value)
-            case greenValue:
-                greenValue = String(greenSlider.value)
-            default:
-                blueValue = String(blueSlider.value)
-            }
-        }
+    private func setColorPaletteBackground() {
+
     }
+    
+    
 }
 
 
