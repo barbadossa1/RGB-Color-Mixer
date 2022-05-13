@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         
         colorPalette.layer.cornerRadius = 10
         
+        setDefaultColor ()
         
     }
     
@@ -34,9 +35,11 @@ class ViewController: UIViewController {
         blueSliderValue.text = String(blueSlider.value)
     }
     
-    private func setColorPaletteBackground() {
-
+    private func setDefaultColor () {
+        colorPalette.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
+    
+    
     
     
 }

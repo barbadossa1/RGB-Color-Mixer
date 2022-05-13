@@ -87,16 +87,25 @@
                                                 <rect key="frame" x="-2" y="0.0" width="270" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemRedColor"/>
+                                                <connections>
+                                                    <action selector="setLabelValues" destination="BYZ-38-t0r" eventType="valueChanged" id="VhJ-G9-ya3"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="T7s-Yd-Tdg">
                                                 <rect key="frame" x="-2" y="67" width="270" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemGreenColor"/>
+                                                <connections>
+                                                    <action selector="setLabelValues" destination="BYZ-38-t0r" eventType="valueChanged" id="NCu-Br-SLc"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kMF-dm-XU0">
                                                 <rect key="frame" x="-2" y="134" width="270" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemBlueColor"/>
+                                                <connections>
+                                                    <action selector="setLabelValues" destination="BYZ-38-t0r" eventType="valueChanged" id="C3U-fi-7uZ"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
