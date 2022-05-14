@@ -30,9 +30,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func setLabelValues() {
-        redSliderValue.text = String(format: "%2f", redSlider.value)
-        greenSliderValue.text = String(format: "%2f", greenSlider.value)
-        blueSliderValue.text = String(format: "%2f", blueSlider.value)
+        redSliderValue.text = String(format: "%.2f", redSlider.value)
+        greenSliderValue.text = String(format: "%.2f", greenSlider.value)
+        blueSliderValue.text = String(format: "%.2f", blueSlider.value)
     }
     
     private func setColorPalette () {
