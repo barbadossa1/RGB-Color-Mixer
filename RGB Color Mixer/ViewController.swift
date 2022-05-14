@@ -25,22 +25,23 @@ class ViewController: UIViewController {
         
         colorPalette.layer.cornerRadius = 10
         
-        setDefaultColor ()
+        setColorPalette()
         
     }
     
     @IBAction func setLabelValues() {
-        redSliderValue.text = String(redSlider.value)
-        greenSliderValue.text = String(greenSlider.value)
-        blueSliderValue.text = String(blueSlider.value)
+        redSliderValue.text = String(format: "%2f", redSlider.value)
+        greenSliderValue.text = String(format: "%2f", greenSlider.value)
+        blueSliderValue.text = String(format: "%2f", blueSlider.value)
     }
     
-    private func setDefaultColor () {
-        colorPalette.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+    private func setColorPalette () {
+        colorPalette.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1)
     }
-    
-    
-    
     
 }
 
