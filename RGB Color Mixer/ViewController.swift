@@ -33,9 +33,10 @@ class ViewController: UIViewController {
         redSliderValue.text = String(format: "%.2f", redSlider.value)
         greenSliderValue.text = String(format: "%.2f", greenSlider.value)
         blueSliderValue.text = String(format: "%.2f", blueSlider.value)
+        setColorPalette()
     }
     
-    private func setColorPalette () {
+    private func setColorPalette() {
         colorPalette.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
